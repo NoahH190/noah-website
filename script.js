@@ -29,7 +29,7 @@ const experienceData = {
     role: "Machine Learning Engineering Intern",
     summary:
       "Currently building transformer-based recommendation models and a context-aware tokenizer that powers richer product discovery for millions of users.",
-    image: "assets/shopify_20stores_1cb40842-dab6-4920-a234-4da36e79fc8a.webp",
+    image: "assets/2.svg",
     alt: "Shopify storefront collage",
     link: "https://www.shopify.com/",
   },
@@ -39,7 +39,7 @@ const experienceData = {
     role: "ML & Software Intern",
     summary:
       "Worked on generative and computer vision systems using LLaMA-3 and SAM to optimize wildfire detection and reduce compute costs across large-scale AI infrastructure.",
-    image: "assets/Screenshot 2025-10-09 at 10.08.01 PM.png",
+    image: "assets/3.svg",
     alt: "Telus digital experience visual",
     link: "https://www.telus.com/",
   },
@@ -49,7 +49,7 @@ const experienceData = {
     role: "Founding Engineering Intern",
     summary:
       "Built the backend of a women's pregnancy care app enabling secure, offline access to maternal health support in low-connectivity regions.",
-    image: "assets/0daeee_64565c181d674f4684ce628048272081~mv2.png",
+    image: "assets/4.svg",
     alt: "Vitala Global founders speaking on stage",
     link: "https://www.vitalaglobal.org/",
   },
@@ -59,7 +59,7 @@ const experienceData = {
     role: "Software Engineering Research Intern",
     summary:
       "Developed predictive models on maternal health data and deployed them as fast, scalable microservices on Azure using Docker and Kubernetes.",
-    image: "assets/644fb7a564b6606e4e19dcf8_20230501T1259-f0aff0ab-6aef-4f8a-b039-fad01f658205.jpg",
+    image: "assets/5.svg",
     alt: "Microsoft campus skyline",
     link: "https://www.microsoft.com/",
   },
@@ -69,7 +69,7 @@ const experienceData = {
     role: "Application & Software Engineering Intern",
     summary:
       "Created data-driven ad and partnership tools with Python, Vue.js, and AWS that improved user engagement and drove measurable revenue growth.",
-    image: "assets/644fb7a6e9fe28755bd56399_20230501T1259-9841d46c-efcb-4b42-9d1a-1a80ea1d48e3.jpg",
+    image: "assets/6.svg",
     alt: "P&G laboratory workspace",
     link: "https://www.pg.com/",
   },
@@ -79,7 +79,7 @@ const experienceData = {
     role: "ML Research Assistant",
     summary:
       "Collaborated with PhD researchers to train deep learning models on 12,000+ microbiome samples, achieving 84% accuracy in predicting schizophrenia risk.",
-    image: "assets/MIT-lockup-3line-red.png",
+    image: "assets/7.svg",
     alt: "MIT AI Lab logo",
     link: "https://www.csail.mit.edu/",
   },
@@ -142,7 +142,7 @@ function handleCursorGlow(event) {
   if (!selectors.glow) return;
   const xPercent = (event.clientX / window.innerWidth) * 100;
   const yPercent = (event.clientY / window.innerHeight) * 100;
-  selectors.glow.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(255, 180, 198, 0.4), transparent 65%)`;
+  selectors.glow.style.background = `radial-gradient(circle at ${xPercent}% ${yPercent}%, rgba(100, 100, 100, 0.15), transparent 65%)`;
 }
 
 function setCurrentCompany() {
