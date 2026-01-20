@@ -8,9 +8,8 @@
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
-    rel="stylesheet" />
+  href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
+  rel="stylesheet" />
 </head>
 
 <body>
@@ -22,7 +21,7 @@
   <header class="hero" id="top">
     <div class="container">
       <nav class="top-nav">
-        <a class="nav-logo nav-logo--pill" href="#top">Alisha Arora</a>
+        <a class="nav-logo nav-logo--pill" href="#top">Noah Harman</a>
         <ul class="nav-links">
           <li><a href="#about" data-scroll="#about">About</a></li>
           <li><a href="#experience" data-scroll="#experience">Experience</a></li>
@@ -37,16 +36,16 @@
             <img src="assets/1.svg" alt="Alisha Arora smiling in a red dress" />
           </div>
           <div class="hero-tags">
-            <span>Software Engineering</span>
-            <span>Machine Learning</span>
-            <span>Systems Design</span>
+            <span>Firmware</span>
+            <span>Digital Design</span>
+            <span>Hardware</span>
           </div>
         </figure>
         <div class="hero-copy">
           <p class="eyebrow">Engineer · Researcher · Innovator</p>
           <h1>
-            Hi, I’m <span>Alisha</span>. I'm a Systems Design Engineering student at the University of Waterloo, pushing
-            the boundaries of AI & software innovation.
+            Hi, I’m <span>Noah</span>. I'm a Mechatronics Engineering student at the University of Waterloo, passionate
+            about making a difference through digital design and innovation.
           </h1>
           <p class="hero-body">
             Currently building transformer-based recommendation models at Shopify. Recognized as one of Canada’s Top 100
@@ -55,21 +54,21 @@
             in healthcare, climate, and beyond.
           </p>
           <div class="hero-cta">
-            <a class="primary-btn" href="https://www.linkedin.com/in/alishaarora56/">Linkedin</a>
+            <a class="primary-btn" href="https://www.linkedin.com/in/noahharman/">Linkedin</a>
             <a class="secondary-btn" href="#experience" data-scroll="#experience">See work</a>
           </div>
           <dl class="hero-stats">
             <div>
               <dt>Now</dt>
-              <dd>Interning as an MLE intern @ <span>Shopify</span></dd>
+              <dd>Studying Mechatronics Engineering @ <span>University of Waterloo</span></dd>
             </div>
             <div>
               <dt> Exploring</dt>
-              <dd>agents, inference & search </dd>
+              <dd>FPGA accelerated ML solutions </dd>
             </div>
             <div>
               <dt>Fueled with</dt>
-              <dd>curiosity, community, a little glitter ✨</dd>
+              <dd>curiosity, community, and a lot of coffee ✨</dd>
             </div>
           </dl>
         </div>
@@ -166,42 +165,39 @@
     <section class="values" id="about">
       <div class="container">
         <div class="section-header">
-          <h2>Beyond just an engineer 🫶</h2>
+          <h2>What I've been working on</h2>
           <p>
-            The communities and councils where I build, advocate, and reimagine how technology can serve people.
+            Hardware
           </p>
         </div>
         <div class="values-grid">
           <article>
-            <h3>UNICEF Youth Ambassador</h3>
+            <h3>MIPS Five-Stage Pipelined Processor</h3>
+            <p class="tech-stack">Verilog, Xilinx Vivado, C++, Python</p>
             <p>
-              As a UNICEF Youth Ambassador, I help shape global conversations on AI and children’s rights—from the
-              Government of Scotland’s <a href="https://www.scottishai.com/news/engaging-youth-the-future-of-ai"
-                target="_blank" rel="noopener">AI and Children’s Rights initiative</a> to UNICEF’s <a
-                href="https://www.unicef.org/innocenti/events/global-forum-ai-children" target="_blank"
-                rel="noopener">global policy work</a>.
-          </article>
-          <article>
-            <h3>World Economic Forum AI Council Member</h3>
-            <p>
-              At the World Economic Forum’s Global AI Council, I contribute to discussions on ethical and inclusive AI.
-              I also judged the Smart Toy Awards alongside will.i.am, spotlighting safe, creative AI products for kids.
+              Designed a synthesizable five-stage pipelined MIPS processor in Verilog, targeting the BASYS-3 FPGA with a
+              frequency of >50MHz. The architecture features a custom memory controller using the AMBA AXI protocol,
+              branch prediction, and hazard handling logic. Verification was conducted using constrained random testing
+              with Cocotb and Xsim, alongside a custom C++ CPU emulator for register-write validation.
             </p>
           </article>
           <article>
-            <h3>Founder of The HopeSisters</h3>
+            <h3>FPGA Memory Game</h3>
+            <p class="tech-stack">VHDL, Xilinx Vivado</p>
             <p>
-              Forbes-recognized nonprofit with a mission of spreading hope to vulnerable populations! Delivered over
-              5,000 HopeBags for kids in care and 2,000 HopeCards to seniors in long-term care.
+              Developed a VHDL-based memory pattern game controlled by a Mealy Finite State Machine. The system utilizes
+              a Linear-Feedback Shift Register (LFSR) for pseudo-random sequence generation and interfaces with on-board
+              peripherals like LEDs and push-buttons. Real-time gameplay is managed through custom comparator circuits
+              and timeout logic to validate user inputs.
             </p>
           </article>
           <article>
-            <h3>Women in Engineering</h3>
+            <h3>VGA Text Console on FPGA</h3>
+            <p class="tech-stack">Verilog, Xilinx Vivado</p>
             <p>
-              Mentoring women and underrepresented students, hosting <a
-                href="https://www.youtube.com/watch?v=wLb6qKamqs4" target="_blank" rel="noopener">Women in
-                Engineering</a> podcast conversations, and serving as a Dell Girls in Engineering Ambassador championing
-              equity in STEM.
+              Engineered a resource-efficient VGA text console in Verilog, delivering real-time 640x480 resolution at
+              60Hz. The design features PLL-based 25.175 MHz clocking for stable signal integrity and optimized RTL for
+              HSync/VSync generation, ensuring precise synchronization and minimal logic gate overhead.
             </p>
           </article>
         </div>
